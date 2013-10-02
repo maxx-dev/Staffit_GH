@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="../js/jquery-2.0.3.min.js"></script>
+
+    <script>
+
+        function LoadTeamView ()
+        {
+            $.ajax({
+                type: "POST",
+                dataType: "json",
+                url: "getTeam.php",
+                data: {},
+                success: function(data){
+
+                    console.log(data);
+                },
+
+                error:function(data) {
+
+                    console.log('ERROR');
+                    console.log(data);
+                }
+            });
+        }
+
+    </script>
+
+</head>
+
+
+<body onload="LoadTeamView()">
+
+</body>
+</html>

@@ -1,0 +1,1149 @@
+/*********** OPTIONAL FILTERS***********/
+
+#ControlPanel .Controls {
+
+    position:relative;
+    top:15%;
+    left:5%;
+    width:85%;
+    overflow:hidden;
+}
+
+#ControlPanel .Controls input {
+
+    float:left;
+    position:relative;
+    padding-left:25px;
+    left:0%;
+    width:90%;
+    height:30px;
+    margin-bottom:20px;
+    background-image: url("img/icons/calendar.svg");
+    background-repeat:no-repeat;
+    background-position:  2px 8px;
+    font-family:exoextralight;
+    font-size:15px;
+    color:#9c9b9b;
+    border-radius:0px !important;
+
+}
+
+#ControlPanel .Controls .ProjectTitle {
+
+    background-image: none;
+}
+
+#ControlPanel .Controls .TimeControl label {
+
+    float:left;
+    position:relative;
+    left:0%;
+    width:70%;
+    height:25px;
+    font-family: 'exoextralight';
+    margin:0px;
+}
+
+#ControlPanel .Filter {
+
+    float:left;
+    left:0px;
+    position:relative;
+    width:100%;
+    margin:10px;
+    margin-left:0px;
+}
+
+#ControlPanel .Filter img {
+
+    float:left;
+    left:0px;
+    width:40px;
+    position:relative;
+    margin-right:6px;
+    cursor:pointer;
+    /*-webkit-filter: grayscale(100%);*/
+
+}
+
+#ControlPanel > .Vacations, #ControlPanel > .Projects {
+
+    float:left;
+    position:relative;
+    left:0%;
+    width:37px;
+    height:37px;
+    text-align:center;
+    line-height:40px;
+    -webkit-filter: grayscale(100%);
+    background-color:#7ECEFD;
+    color:#ffffff;
+    font-size:14px;
+    border-radius:40px;
+    margin:3px;
+    cursor:pointer;
+}
+
+#ControlPanel .QuickSearchRes {
+
+    float:left;
+    left:0px;
+    margin:0px;
+    margin-top:20px;
+    position:relative;
+    width:100%;
+    height:220px;
+    overflow:hidden;
+
+}
+
+#ControlPanel .QuickSearchRes .QuickBox {
+
+    float:left;
+    position:relative;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:45px;
+    margin:15px;
+    margin-left:0px;
+
+}
+
+#ControlPanel .QuickSearchRes .QuickBox div {
+
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:25px;
+    line-height:30px;
+    margin-bottom:0px;
+    margin-top:0px;
+    font-family:exodemibold;
+    font-size:25px;
+}
+
+
+#ControlPanel .QuickSearchRes .QuickBox label {
+
+    position:absolute;
+    left:0px;
+    top:30px;
+    height:20px;
+    width:100%;
+    margin:0px;
+    font-family:exoextralight;
+
+}
+
+
+#ControlPanel .QuickSearchRes .QuickBox .QuickWrongSkills {
+
+    display:none;
+}
+
+
+
+
+/* **************** CONTENT **********************/
+
+#Content {
+
+    z-index:5;
+    left:23%;
+    position:absolute;
+    top:0%;
+    background-color:white;
+    overflow:scroll;
+    overflow-x:hidden;
+}
+
+.AvailabilitySepLine {
+
+    position:relative;
+    width:100%;
+    height:1px;
+    left:0px;
+    top:20px;
+    margin:0px;
+    background-color:#dddddd;
+}
+
+#Content .AvailableCont {
+
+    top:100px;
+    height:auto;
+    overflow:hidden;
+    -webkit-perspective: 1000;
+    /*background-color:rgba(75, 255, 26,0.2);*/
+}
+
+#Content .AvailableCont label {
+
+    position:absolute;
+    top:15px;
+    left:20px;
+    font-size:25px;
+    color:#000000;
+}
+
+
+#Content .UnAvailableCont {
+
+    margin:0.5%;
+    margin-top:20px;
+    width:99%;
+    height:auto;
+    min-height:10%;
+    overflow:hidden;
+    -webkit-perspective: 1000;
+    min-height:30px;
+    /*background-color:rgba(241, 241,241,1);*/
+}
+
+#Content .UnAvailableCont .Displayer {
+
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:200px;
+    cursor:pointer;
+}
+
+#Content .UnAvailableCont .Displayer label {
+
+    position:absolute;
+    top:0px;
+    left:0px;
+    font-family:exodemibold;
+    font-size:14px;
+    color:#dddddd;
+    text-transform:uppercase;
+}
+
+#Content .UnAvailableCont .Displayer img {
+
+    position:absolute;
+    top:-1px;
+    left:108px;
+}
+ #SelectedCont {
+
+    float:left;
+    z-index:5;
+    position:relative;
+    bottom:0px;
+    margin:0px;
+    margin-top:-75px;
+    left:0%;
+    margin-left:23%;
+    width:76%;
+    height:60px;
+    overflow:hidden;
+    background-color:#ffffff;
+    border-top: 1px #797A77 solid;
+}
+
+/* TEAM STATI */
+
+.Available, .UnAvailable {
+
+    float: left;
+    position: relative;
+    width: 115px;
+    height: 115px;
+    top:10px;
+    left:10px;
+    margin-top: 0px;
+    margin-right: 13px;
+    margin-bottom: 13px;
+    border: 1px solid #CCC;
+    cursor:pointer;
+    -webkit-transform-style: preserve-3d;
+}
+
+.UnAvailable {
+
+    top:35px;
+    display:none;
+}
+
+.Available .Front, .UnAvailable .Front {
+
+    z-index:20;
+    position: absolute;
+    width:100%;
+    height:100%;
+    -webkit-backface-visibility: hidden;
+}
+
+.Available .Back, .UnAvailable .Back {
+
+    z-index:20;
+    display: block;
+    position: absolute;
+    width:100%;
+    height:100%;
+    -webkit-transform: rotateY(180deg);
+    -webkit-backface-visibility: hidden;
+}
+
+.Selected {
+
+    float:left;
+    top:0px;
+    position:relative;
+    width:50px;
+    height:50px;
+    border:1px #292726 solid;
+    margin:5px 5px 5px 0;
+    cursor:pointer;
+}
+
+.Selected .SkillsCont {
+
+    display:none;
+}
+.SelectedButton {
+
+    position:absolute;
+    left:73%;
+    top:12px;
+    width:180px;
+    height:40px;
+    font-size:18px;
+    background-color:#91c46c;
+    text-align:center;
+    line-height:40px;
+    cursor:pointer;
+}
+
+.Available .MemberImg, .UnAvailable .MemberImg, .Selected .MemberImg {
+
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:100%;
+    z-index:0;
+    /*-webkit-filter: grayscale(100%);*/
+
+}
+
+.Selected .MemberImg {
+
+
+}
+
+.Selected .Delete{
+
+    position:absolute;
+    top:0px;
+    left:0%;
+}
+
+.Available .Name, .UnAvailable .Name {
+
+    z-index:0;
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    width:100%;
+    height:25px;
+    background-color:rgba(41, 39, 38,0.7);
+    line-height:25px;
+    font-size:13px;
+}
+
+.Available .Name div, .UnAvailable .Name div {
+
+    position:absolute;
+    right:5px;
+}
+
+
+.Selected .Name {
+
+   display:none;
+}
+
+.Available .DetailsButton, .UnAvailable .DetailsButton {
+
+
+    display:none;
+    z-index:12;
+    position:absolute;
+    top:100%;
+    margin-top:-22px;
+    left:0px;
+    cursor:pointer;
+}
+
+.Selected .Details {
+
+    display:none;
+}
+
+.Selected .DetailsButton {
+
+    display:none;
+}
+
+.Available .Details, .UnAvailable .Details {
+
+    position:absolute;
+    z-index:11;
+    display:block;
+    left:0%;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    font-size:9px;
+    text-align:center;
+    background-color: #3C3C3B;
+    background-color:#ffffff;
+    color:#ffffff;
+}
+
+
+
+
+
+.Available .Details .Busy, .UnAvailable .Details .Busy {
+
+    position:relative;
+    height:16px;
+    line-height:16px;
+    width:90%;
+    margin-bottom:5px;
+    display:inline-block;
+    font-size:14px;
+    color:#333;
+}
+
+.Available .Details .Free, .UnAvailable .Details .Free {
+
+    position:relative;
+    height:16px;
+    line-height:16px;
+    width:90%;
+    margin-bottom:5px;
+    display:inline-block;
+}
+
+.Available .Details:hover, .UnAvailable .Details:hover {
+
+   /* -webkit-transform: rotateY(0deg);*/
+}
+
+
+.Available .SkillsCont, .UnAvailable .SkillsCont, .Selected .SkillsCont {
+
+    position:absolute;
+    left:0px;
+    overflow:hidden;
+    width:40px;
+    z-index:1;
+}
+
+.Available .SkillsCont .Skill, .UnAvailable .SkillsCont .Skill, .Selected.SkillsCont .Skill {
+
+    position:relative;
+    left:0px;
+    top:0px;
+    height:20px;
+    width:20px;
+}
+
+.Available .SkillsCont .Skill img, .UnAvailable .SkillsCont .Skill img, .Selected.SkillsCont .Skill img {
+
+
+}
+
+.SelectedConfirm {
+
+    z-index:11;
+    position:absolute;
+    display:none;
+    top:50%;
+    left:50%;
+    width:600px;
+    height:380px;
+    margin-left:-300px;
+    margin-top:-200px;
+    background-color:#ffffff;
+}
+
+
+
+.SelectedConfirm .Title input {
+
+    position:absolute;
+    top:30px;
+    left:20px;
+    border-radius:0px;
+    padding-top:12px;
+    height:30px;
+    width:90%;
+    font-size:24px;
+    font-family:exoextralight;
+    border:0px;
+    background-color:rgba(245,245,245,1);
+}
+
+.SelectedConfirm .TimeRange {
+
+    position:absolute;
+    top:95px;
+    left:20px;
+    font-size:16px;
+    color:#6F6F6E;
+}
+
+.SelectedConfirm .TeamMember {
+
+    position:absolute;
+    top:120px;
+    left:20px;
+}
+
+.SelectedConfirm .Notes {
+
+    position:absolute;
+    top:190px;
+    left:20px;
+    width:540px;
+    height:120px;
+    background-color:rgba(245,245,245,1);
+    border:0px;
+    resize:none;
+}
+
+.SelectedConfirm .Confirm {
+
+    position:absolute;
+    bottom: 10px;
+    right:10px;
+    width:120px;
+    height:40px;
+    line-height:40px;
+    font-size:16px;
+    background-color:#91c46c;
+    text-align:center;
+    cursor:pointer;
+}
+
+.SelectedConfirm .Quit {
+
+    position:absolute;
+    bottom: 10px;
+    right:140px;
+    width:120px;
+    height:40px;
+    line-height:40px;
+    font-size:16px;
+    background-color:#91c46c;
+    text-align:center;
+    cursor:pointer;
+}
+
+
+.SelectedConfirm .SendMail {
+
+    position:absolute;
+    bottom:20px;
+    left:20px;
+    width:20px;
+    height:20px;
+    border: 1px #91c46c solid;
+    border-radius:5px;
+    background-position: 0px 0px;
+
+}
+
+.SelectedConfirm .SendMailLabel {
+
+    position:absolute;
+    bottom:17px;
+    left:50px;
+    color:#91c46c;
+    font-size:20px;
+
+}
+
+.SelectedLayer {
+
+    display:none;
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    z-index:10;
+    background-color:rgba(0,0,0,0.5);
+
+}
+
+@media only screen and (orientation:portrait)
+{
+
+    html, body {
+        position:absolute;
+        left:0px;
+        top:0px;
+        margin: 0px;
+        overflow: scroll;
+        height:100%;
+        width: 100%;
+        font-family: exoextralight;
+        font-size:16px;
+        color:white;
+
+    }
+
+    #ControlPanel {
+
+        float:left;
+        position:relative;
+        top:0px;
+        left:0px;
+        margin:0px;
+        width:100%;
+        background-color: #3C3C3B;
+        height:200px;
+    }
+
+
+    #HeaderBar {
+
+        display:none;
+    }
+
+    #ControlPanel .DateContainer {
+
+        display:none;
+        position:absolute;
+        top:0px;
+        left:100%;
+        margin-left:-200px;
+        width:200px;
+        height:9%;
+        font-size:30px;
+        font-family: 'exoextralight';
+        color: #7ECEFD;
+    }
+
+    #ControlPanel .Controls {
+
+        position:relative;
+        top:15px;
+        left:3%;
+        width:100%;
+        height:100%;
+        overflow:hidden;
+    }
+
+    #ControlPanel .Controls .TimeControl > label {
+
+        float:left;
+        position:relative;
+        left:0%;
+        width:200px;
+        height:25px;
+        font-family: 'exoextralight';
+        margin:0px;
+    }
+
+    #ControlPanel .Controls input {
+
+
+        position:relative;
+        padding-left:25px;
+        left:0%;
+        width:200px;
+        height:30px;
+        margin-bottom:20px;
+        background-image: url("img/icons/calendar.svg");
+        background-repeat:no-repeat;
+        background-position:  2px 8px;
+        font-family:exoextralight;
+        font-size:15px;
+        color:#9c9b9b;
+        border-radius:0px !important;
+
+    }
+
+    #ControlPanel .TimeControl {
+
+        float:left;
+        position:relative;
+        height:70%;
+        width:200px;
+    }
+
+    #ControlPanel .Filter {
+
+        float:left;
+        position:relative;
+        float:left;
+        left:15px;
+        top:25px;
+        width:240px;
+        margin:0px;
+        margin-left:40px;
+    }
+
+    #ControlPanel .Filter img {
+
+        float:left;
+        left:0px;
+        width:40px;
+        position:relative;
+        margin:10px;
+        margin-top:0px;
+        margin-bottom:0px;
+        cursor:pointer;
+        /*-webkit-filter: grayscale(100%);*/
+
+    }
+
+    #ControlPanel .QuickSearchRes .QuickBox {
+
+        position:relative;
+        left:0px;
+        top:0px;
+        width:100%;
+        height:30px;
+    }
+
+
+    #ControlPanel .QuickSearchRes .QuickBox div {
+
+
+        position:absolute;
+        top:0px;
+        left:0px;
+        width:150px;
+        margin:0px;
+    }
+
+    #ControlPanel .QuickSearchRes .QuickBox label {
+
+        position:absolute;
+        top:20px;
+        left:0px;
+        width:50px;
+        margin:0px;
+    }
+
+
+    #SelectedCont {
+
+        float:left;
+        z-index:5;
+        position:relative;
+        bottom:-130px;
+        margin:0px;
+        margin-top:0px;
+        left:0%;
+        margin-left:0%;
+        width:100%;
+        height:60px;
+        overflow:hidden;
+        background-color:#ffffff;
+        border-top: 1px #797A77 solid;
+    }
+
+    #Content {
+
+        float:left;
+        position:relative;
+        top:0%;
+        margin:0px;
+        margin-left:1%;
+        width:100%;
+        background-color:white;
+        overflow:scroll;
+        overflow-x:hidden;
+    }
+
+    .Selected {
+
+        float:left;
+        top:0px;
+        left:10px;
+        position:relative;
+        width:50px;
+        height:50px;
+        border:1px #292726 solid;
+        margin:5px 5px 5px 0;
+        cursor:pointer;
+    }
+
+    .Available {
+
+        left:3px;
+    }
+
+}
+
+
+
+/* BACKEND */
+
+
+#BContent {
+
+    position:absolute;
+    top:90px;
+    left:0px;
+}
+
+.UserTile {
+
+    float: left;
+    left:20px;
+    position: relative;
+    width: 320px;
+    height: 115px;
+    display: inline-block;
+    margin-top: 7px;
+    margin-right: 7px;
+    margin-bottom: 7px;
+    overflow-y: scroll;
+    border: 1px solid #CCC;
+
+}
+
+
+.UserTile .MemberImg {
+
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:115px;
+    z-index:0;
+    /*-webkit-filter: grayscale(100%);*/
+
+}
+
+.UserTile .Skill {
+
+    position:relative;
+    left:0px;
+    top:0px;
+    z-index:1;
+
+
+}
+
+.UserTile  .Name {
+
+    z-index:1;
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    width:115px;
+    height:25px;
+    background-color:rgba(41, 39, 38,0.7);
+    line-height:25px;
+    font-size:13px;
+}
+
+
+.UserTile .Name div {
+
+    position:absolute;
+    right:5px;
+}
+
+
+.UserTile .Details {
+
+    position:absolute;
+    left:120px;
+    top:0px;
+    color:#000000;
+
+}
+
+.UserTile .Details .Busy {
+
+    float:left;
+    position:relative;
+    font-size:12px;
+    font-size:12px;
+    width:100%;
+    margin-bottom:5px;
+}
+
+.UserTile .Details .Free {
+
+    float:left;
+    position:relative;
+    font-size:12px;
+    width:100%;
+    margin-bottom:5px;
+}
+
+.UserTile .Edit {
+
+    position:absolute;
+    top:5px;
+    right:5px;
+    width:20px;
+    height:20px;
+    border-radius:20px;
+    background-color:#000000;
+    color:#ffffff;
+    font-size:20px;
+    text-align:center;
+    line-height:20px;
+    cursor:pointer;
+    z-index:10;
+}
+
+.DurationCont {
+
+    top:30px;
+    left:10px;
+    position:relative;
+    width:180px;
+    height:15px;
+    background-color:#CCCCCC;
+    margin-bottom:5px;
+}
+
+.Duration {
+
+    position:absolute;
+    top:0px;
+    left:30px;
+    height:15px;
+    width:40px;
+    background-color:#292726;
+}
+
+.Now {
+
+    position:absolute;
+    top:0px;
+    width:1px;
+    height:15px;
+    background-color:#7ECEFD;
+}
+
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation : portrait)
+{
+    html, body {
+
+        width:100%;
+        height:100%;
+        overflow-x:hidden;
+        overflow-y:scroll;
+
+    }
+
+    #HeaderBar {
+
+        position:absolute;
+        top:0px;
+        margin:0px;
+        left:0px;
+        height:80px;
+        width:100%;
+        display:block;
+        background-color:#292726;
+    }
+
+    #HeaderBar .Title {
+
+        position:absolute;
+        top:28px;
+        left:80px;
+        width:230px;
+        color:#ffffff;
+        font-size:16px;
+        font-family:exodemibold;
+
+    }
+
+    #HeaderBar .Location {
+
+        position:absolute;
+        left:80px;
+        top:48px;
+        color:#ffffff;
+    }
+
+    #HeaderBar img {
+
+        top:15px;
+        left:20px;
+        width:50px;
+    }
+
+    #ControlPanel {
+        z-index:5;
+        position:relative;
+        top:0px;
+        left:-100%;
+        height:100%;
+        -webkit-transition: left ease 400ms;
+    }
+
+    #ControlPanel .Controls {
+
+        top:30px;
+    }
+
+
+    #ControlPanel .QuickSearchRes {
+
+        float:left;
+        left:30px;
+        margin:0px;
+        margin-top:80px;
+        position:relative;
+        width:100%;
+        height:220px;
+        overflow:hidden;
+
+    }
+
+    #ControlPanel .QuickSearchRes .QuickBox {
+
+        float:left;
+        position:relative;
+        top:0px;
+        left:0px;
+        width:21%;
+        height:45px;
+        margin:10px;
+        margin-left:0px;
+        text-align:center;
+
+    }
+
+    #ControlPanel .QuickSearchRes .QuickBox div {
+
+        position:absolute;
+        top:0px;
+        left:0px;
+        width:100%;
+        height:25px;
+        line-height:30px;
+        margin-bottom:0px;
+        margin-top:0px;
+        font-family:exodemibold;
+        font-size:25px;
+    }
+
+
+    #ControlPanel .QuickSearchRes .QuickBox label {
+
+        position:absolute;
+        left:0px;
+        top:30px;
+        height:20px;
+        width:100%;
+        margin:0px;
+        font-family:exoextralight;
+
+    }
+
+
+
+    #SelectedCont {
+        z-index:5;
+        position:fixed;
+        top:0px;
+        left:100%;
+        height:100%;
+        -webkit-transition: left ease 400ms;
+
+    }
+
+    .Selected {
+
+        top:40px;
+    }
+
+    #SelectedCont .SelectedButton {
+
+        position:absolute;
+        top:100%;
+        margin-top:-50px;
+        left:20px;
+        cursor:pointer;
+
+    }
+    #ControlPanel .Controls .TimeControl {
+
+        left:30px;
+        height:170px;
+        width:250px;
+    }
+
+    #ControlPanel .Controls .TimeControl input {
+
+    }
+
+    #ControlPanel .Controls .TimeControl label {
+
+    }
+
+    #ControlPanel .Controls .Filter {
+
+        top:0px;
+        left:30px;
+        margin:0px;
+        width:250px;
+    }
+
+    #ControlPanel .Controls .Filter img {
+
+        margin:0px;
+        left:5px;
+        margin-right:20px;
+    }
+
+    #Content {
+        z-index:4;
+        position:absolute;
+        top:90px;
+        overflow:visible;
+    }
+
+    .Available, .UnAvailable {
+
+        left:15px;
+        width:80px;
+        height:80px;
+        margin-right:20px;
+    }
+
+    .Available .Name, .UnAvailable .Name {
+
+        z-index:0;
+        position:absolute;
+        bottom:0px;
+        left:0px;
+        width:100%;
+        height:20px;
+        background-color:rgba(41, 39, 38,0.7);
+        line-height:25px;
+        font-size:13px;
+    }
+
+    .Available .Name div, .UnAvailable .Name div {
+
+        position:absolute;
+        right:5px;
+    }
+
+
+}
+
+

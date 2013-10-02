@@ -1,0 +1,1145 @@
+
+
+@font-face {
+    font-family: 'exodemibold';
+    src: url('font/exo-semibold-webfont.eot');
+    src: url('font/exo-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('font/exo-semibold-webfont.woff') format('woff'),
+    url('font/exo-semibold-webfont.ttf') format('truetype'),
+    url('font/exo-semibold-webfont.svg#exodemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'exoextralight';
+    src: url('font/exo-extralight-webfont.eot');
+    src: url('font/exo-extralight-webfont.eot?#iefix') format('embedded-opentype'),
+    url('font/exo-extralight-webfont.woff') format('woff'),
+    url('font/exo-extralight-webfont.ttf') format('truetype'),
+    url('font/exo-extralight-webfont.svg#exoextralight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+
+    position:absolute;
+    left:0px;
+    top:0px;
+    margin: 0px;
+    overflow: hidden;
+    height:100%;
+    width: 100%;
+    font-family: exoextralight;
+    font-size:16px;
+    color:white;
+
+}
+
+/*::-webkit-scrollbar {
+
+    display:none;
+}*/
+
+#NavCont {
+
+    position:relative;
+    top:0px;
+    width:100%;
+    height:11%;
+    margin:0px;
+    background-color:#3C3C3B;
+}
+
+#NavCont .Date {
+
+    position:absolute;
+    top:0px;
+    left:10px;
+    width:90%;
+    height:9%;
+    font-size:30px;
+    font-family: 'exoextralight';
+    color: #7ECEFD;
+}
+
+#NavCont .Date .Day {
+
+    position:absolute;
+    left:0px;
+    top:0px;
+    font-size:55px;
+}
+
+#NavCont .Date .Weekday {
+
+    position:absolute;
+    left:70px;
+    top:10px;
+    font-size:23px;
+}
+
+#NavCont .Date .MonthYear {
+
+    position:absolute;
+    top:38px;
+    left:70px;
+    color:#797A77;
+    font-size:16px;
+}
+
+#NavCont .Menu {
+
+    position:absolute;
+    left:50%;
+    top:15px;
+    width:400px;
+    margin-left:-200px;
+}
+
+#NavCont .Menu .Element {
+
+    float:left;
+    left:0px;
+    position:relative;
+    width:80px;
+    margin-left:15px;
+    cursor:pointer;
+    text-align: center;
+}
+
+#NavCont .Menu .Element div {
+
+    top:-5px;
+    position:relative;
+    text-align:center;
+    width:100%;
+    font-family: 'exodemibold';
+    font-size: 14px;
+}
+
+#NavCont .User {
+
+    position:absolute;
+    right:0px;
+    top:0px;
+}
+
+#NavCont .User .Title {
+
+    position:absolute;
+    top:20px;
+    right:95px;
+    font-size:20px;
+    color:#292726;
+    width:270px;
+    color:#ffffff;
+    text-align: right;
+}
+
+#NavCont .User .Location {
+
+    position:absolute;
+    top:50px;
+    right:95px;
+    font-size:17px;
+    color:#797A77;
+    width:150px;
+    text-align: right;
+}
+
+#NavCont .User img {
+
+    position:absolute;
+    top:13px;
+    width:65px;
+    position:absolute;
+    right:15px;
+}
+
+
+#AppViewCont {
+
+    position:relative;
+    top:2px;
+    left:0px;
+    width:100%;
+    height:89%;
+    margin:0px;
+}
+
+
+
+
+
+#ControlPanel {
+
+    z-index:1;
+    float:left;
+    position:relative;
+    top:0px;
+    left:0px;
+    margin:0px;
+    background-color: rgba(210,210,210, 0.95);
+    height:100%;
+    width:23%;
+    -webkit-box-shadow: 3px 0px 20px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow:    3px 0px 3px rgba(0, 0, 0, 0.3);
+    box-shadow:         3px 0px 3px rgba(0, 0, 0, 0.3);
+    overflow:scroll;
+
+}
+
+#ControlPanel .ProjectType {
+
+    font-family: 'exodemibold';
+    float:left;
+    position:relative;
+    z-index:3;
+    top:0px;
+    width:33.33%;
+    height:50px;
+    text-align:center;
+    font-size:15px;
+    background-color:#3C3C3B;
+    line-height:50px;
+    cursor:pointer;
+    text-transform: uppercase;
+}
+
+#ControlPanel .ProjectsContainer {
+
+    position:absolute;
+    z-index:2;;
+    top:0px;
+    width:100%;
+    height:100%;
+}
+
+#ControlPanel .TeamContainer {
+
+    position:absolute;
+    z-index:2;;
+    top:0px;
+    width:100%;
+    height:100%;
+
+}
+
+#ControlPanel .ProjectsContainer > .Project {
+
+    z-index:0;
+    top:50px;
+    left:0px;
+    position:relative;
+    width:100%;
+    height:50px;
+    text-align:left;
+    /*background-color:rgba(129, 126, 126,1);*/
+    color:#000000;
+    cursor:pointer;
+    margin-top:1px;
+
+}
+
+
+/*#ControlPanel .Project:nth-child(2n) {
+
+    background-color:rgba(203, 204, 198,1);
+}
+
+#ControlPanel .Team:nth-child(2n) {
+
+    background-color:rgba(203, 204, 198,1);
+}*/
+
+.Project > .Displayer {
+
+    position:absolute;
+    left:0px;
+    top:14px;
+}
+
+.Project .Title {
+
+    position:absolute;
+    top:15px;
+    left:20px;
+
+}
+
+.Project .Team {
+
+    display:none;
+    position:absolute;
+    top:50px;
+    left:10px;
+    width:90%;
+}
+
+.Project .Team .Member {
+
+    float:left;
+    position:relative;
+    width:40px;
+    height:40px;
+    left:0px;
+    top:0px;
+    margin-right:3px;
+}
+
+.Project .Team .Member img {
+
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+}
+
+.Project .Details {
+    position:absolute;
+    right:10px;
+    top:15px;
+    -webkit-filter: invert(100%);
+    cursor:pointer;
+}
+
+#ControlPanel .SkillsFilter {
+
+    position:absolute;
+    top:5px;
+    left:20px;
+
+}
+
+#ControlPanel .TeamContainer {
+
+
+    position:absolute;
+    top:50px;
+}
+
+
+#ControlPanel .TeamContainer > .Team {
+
+    z-index:0;
+    top:0px;
+    left:0px;
+    position:relative;
+    width:100%;
+    height:50px;
+    text-align:left;
+    /*background-color:rgba(129, 126, 126,1);*/
+    color:#000000;
+    cursor:pointer;
+    margin-top:1px;
+}
+
+.TeamContainer .Team > .Displayer {
+    position:absolute;
+    left:65px;
+    top:25px;
+
+}
+
+.TeamContainer .Team .UserImage {
+    position:absolute;
+    left:10px;
+    top:10px;
+    width:50px;
+}
+
+.TeamContainer .Team .Title {
+    position:absolute;
+    top:25px;
+    left:90px;
+}
+
+.TeamContainer .Team .SkillsCont {
+
+    display:none;
+    position:absolute;
+    top:70px;
+    left:10px;
+    width:90%;
+}
+
+.TeamContainer .Team .SkillsCont img {
+
+    float:left;
+    position:relative;
+    margin-right:5px;
+}
+
+.TeamContainer .Team .Details {
+
+    display:none;
+    position:absolute;
+    right:10px;
+    top:10px;
+    -webkit-filter: invert(100%);
+    cursor:pointer;
+}
+
+.TeamContainer .Team .Projects {
+
+    display:none;
+    top:70px;
+    position:relative;
+    width:100%;
+}
+
+.TeamContainer .Team .Projects .Project {
+
+    position:relative;
+    left:60px;
+    margin-bottom:10px;
+    width:100%;
+    color:#000000;
+}
+
+.TeamContainer .Team > .Vacations {
+
+    display:none;
+    margin-top:20px;
+    position:relative;
+    width:100%;
+}
+
+.TeamContainer .Team .Vacations .Vacation {
+
+    position:relative;
+    left:60px;
+    margin-bottom:10px;
+    width:100%;
+    color:#000000;
+}
+
+#ZoomCont {
+
+    display:none;
+    z-index:999;
+    position:absolute;
+    left:49%;
+    bottom:-150px;
+    opacity:0.5;
+    width:300px;
+    height:300px;
+}
+
+
+#ZoomCont .OuterCircle {
+
+
+    z-index:0;
+    position:absolute;
+    left:0px;
+    bottom:0px;
+    -webkit-transform: rotate(0deg);
+    -webkit-transition: -webkit-transform 300ms linear;
+}
+
+#ZoomCont .InnerCircle {
+
+    z-index:2;
+    position:absolute;
+    left:90px;
+    top:95px;
+}
+
+#CalenderContainer {
+    float:left;
+    position:absolute;
+    width:100%;
+    left:0%;
+    height:100%;
+    margin:0px;
+}
+
+.ZoomButton {
+
+    z-index:999;
+    display:block;
+    position:absolute;
+    top:30px;
+    left:200px;
+
+}
+
+.ZoomButton .Button {
+
+    z-index:3;
+    float:left;
+    margin-right:10px;
+    position:relative;
+    top:0px;
+    left:24%;
+    text-align:center;
+    line-height:30px;
+    width:100px;
+    height:30px;
+    cursor:pointer;
+    background-color:#9c9b9b;
+}
+
+#CalenderContainer .Button {
+
+    z-index:3;
+    float:left;
+    margin-right:10px;
+    position:relative;
+    top:0px;
+    left:24%;
+    text-align:center;
+    line-height:30px;
+    width:100px;
+    height:30px;
+    cursor:pointer;
+    background-color:#9c9b9b;
+}
+
+#CalenderContainer .TimeSwitch {
+
+    display:none;
+}
+
+#CalenderContainer .Earlier {
+
+     opacity:0;
+     z-index:10;
+     position:fixed;
+     top:50%;
+     left:14.3%;
+     width:120px;
+     height:30px;
+    background-color:rgba(111, 111, 110,0.5);
+    -webkit-transform: rotate(-90deg);
+    text-align:center;
+    line-height:30px;
+    cursor:pointer;
+    -webkit-transition: opacity 400ms;
+}
+
+#CalenderContainer .Earlier:hover {
+
+  opacity:1;
+}
+
+#CalenderContainer .Later {
+
+    opacity:0;
+    z-index:10;
+    position:fixed;
+    top:50%;
+    right:-3%;
+    width:120px;
+    height:30px;
+    background-color:rgba(111, 111, 110,0.5);
+    -webkit-transform: rotate(-90deg);
+    text-align:center;
+    line-height:30px;
+    cursor:pointer;
+    -webkit-transition: opacity 400ms;
+}
+
+#CalenderContainer .Later:hover {
+
+    opacity:1;
+}
+
+.Calender {
+    position:absolute;
+    z-index:0;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.CalenderInner {
+
+    height:100%;
+    width:3000px;
+    white-space:nowrap;
+}
+
+
+
+
+
+.LegendUnit:nth-child(2n+1) {
+
+    background-color:rgba(243, 246, 245,1);
+}
+
+.LegendUnitHeader {
+
+    z-index:2;
+    float:left;
+    position:relative;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:40px;
+    margin-bottom:1px;
+    background-color: #eee;
+
+}
+
+.LegendUnitHeader .TimeUnit {
+    position:relative;
+    float:left;
+    width:90px;
+    margin-right:0px;
+    line-height:30px;
+    border-right: 3px #eee solid;
+
+}
+
+.LegendUnitHeader .TimeUnit > div {
+
+    position:relative;
+    text-align:center;
+    width:100%;
+    left:0px;
+    top:15px;
+    color:#000000;
+    font-size:13px;
+    font-family:exodemibold;
+
+}
+
+.LegendUnitHeader .TimeUnit > div .Year {
+
+    position:absolute;
+    top:-23px;
+    font-size:17px;
+}
+
+
+.LegendUnit {
+
+    z-index:1;
+    float:left;
+    position:relative;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:50px;
+    margin-bottom:1px;
+
+}
+
+.LegendUnit .PDur .Name {
+
+    display:none;
+    position:relative;
+    left:100%;
+    margin-left:5px;
+
+    line-height:22px;
+    color:#000000;
+}
+
+.CalenderInner .LegendUnit .SepWrapper {
+
+    z-index:1;
+    float:left;
+    position:relative;
+    width:90px;
+    margin-right:0px;
+    line-height:50px;
+    height:50px;
+    text-align:center;
+    border-right: 3px #eee solid;
+}
+
+
+.CalenderInner .LegendUnit .PDur {
+
+    z-index:2;
+    position:absolute;
+    top:15px;
+    left:0px;
+    height:20px;
+    width:100px;
+    background-color:#7ECEFD;
+    cursor: pointer;
+    margin-bottom:5px;
+
+}
+
+.CalenderInner .LegendUnit .PDur .EditStart {
+
+
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:25px;
+    height:100%;
+    background-color:rgba(203, 204, 198,0.6);
+}
+
+.CalenderInner .LegendUnit .PDur .EditEnd {
+
+    position:absolute;
+    right:0px;
+    top:0px;
+    width:25px;
+    height:100%;
+    background-color:rgba(203, 204, 198,0.6);
+
+}
+
+.EditStart .Helper {
+
+    display:none;
+    position:absolute;
+    top:-20px;
+    left:0px;
+    height:40px;
+    width:2px;
+    background-color:#ac5b13;
+    border-radius:5px;
+}
+
+
+.EditStart .HelperLabel {
+
+
+    position:absolute;
+    top:-10px;
+    left:-20px;
+    height:25px;
+    width:50px;
+    background-color:#ac5b13;
+    text-align:center;
+    color:#000000;
+}
+
+.EditEnd .Helper {
+
+    display:none;
+    position:absolute;
+    top:0px;
+    right:0px;
+    height:40px;
+    width:2px;
+    background-color:#ac5b13;
+    border-radius:5px;
+}
+
+.EditEnd .HelperLabel {
+
+    position:absolute;
+    top:40px;
+    left:-20px;
+    height:25px;
+    width:50px;
+    background-color:#ac5b13;
+    text-align:center;
+    color:#000000;
+}
+
+
+.ProjectDetailsCont {
+    z-index:20;
+    position:absolute;
+    right:-51%;
+    width:50%;
+    height:100%;
+    background-color:#ffffff;
+    -webkit-box-shadow: -2px 0px 15px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: -2px 0px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: -2px 0px 15px rgba(0, 0, 0, 0.5);
+    -webkit-transition: right 0.4s ease;
+}
+
+.ProjectDetailsCont .ProjectWrapper {
+    position:absolute;
+    left:90px;
+    top:40px;
+    width:70%;
+    height:100%;
+    color:#666;
+}
+
+.ProjectDetailsCont .ProjectWrapper .Edit {
+
+    display:none;
+    z-index:5;
+    position:absolute;
+    right:0px;
+    border-radius:30px;
+    width:30px;
+    height:30px;
+    border: 2px #eee solid;
+}
+
+.ProjectDetailsCont .ProjectWrapper .Edit img {
+
+    position:absolute;
+    left:5px;
+    top:5px;
+}
+
+.ProjectDetailsCont .ProjectWrapper .Label {
+
+    margin-top:50px;
+    position:relative;
+    width:100%;
+    height:20px;
+    font-size:30px;
+    color:#7ECEFD;
+}
+
+.ProjectDetailsCont .ProjectWrapper .ProjectName {
+    position:relative;
+    top:0px;
+    left:0px;
+    width:100%;
+    border-bottom: 1px #999 solid;
+    font-size:30px;
+}
+
+
+
+.ProjectDetailsCont .ProjectWrapper .ProgressBarCont {
+
+    margin-top:20px;
+    position:relative;
+    top:0px;
+    left:0px;
+    height:50px;
+    width:100%;
+
+}
+
+.ProjectDetailsCont .ProjectWrapper .ProgressBarCont .ProgressBar {
+
+    margin-top:40px;
+    position:relative;
+    top:0px;
+    left:0px;
+    height:15px;
+    width:100%;
+    background-color:#eee;
+}
+
+.ProjectDetailsCont .ProjectWrapper .ProgressBarCont .ProgressBar .Progress {
+    position:absolute;
+    top:0px;
+    left:0px;
+    height:100%;
+    background-color:#91C46C;
+    width:100px;
+}
+
+.ProjectDetailsCont .ProjectWrapper .ProgressBarCont .StartDate {
+
+    position:absolute;
+    top:25px;
+    left:0px;
+    color:#000000;
+    border: 0px;
+    font-family:exoextralight;
+    font-size:16px;
+}
+
+.ProjectDetailsCont .ProjectWrapper .ProgressBarCont .EndDate {
+
+    position:absolute;
+    top:25px;
+    right:0px;
+    color:#000000;
+    border: 0px;
+    font-family:exoextralight;
+    font-size:16px;
+    text-align:right;
+}
+
+
+
+.ProjectDetailsCont .ProjectWrapper .Team {
+
+    margin-top:30px;
+    position:relative;
+    top:0px;
+    left:0px;
+    min-height:100px;
+}
+
+.ProjectDetailsCont .ProjectWrapper .Team .Member {
+
+    float:left;
+    position:relative;
+    top:0px;
+    width:80px;
+    margin-right:10px;
+
+}
+
+.ProjectDetailsCont .ProjectWrapper .Team .Member img {
+
+    width:100%;
+}
+
+.ProjectDetailsCont .ProjectWrapper .Team .AddMember {
+
+    float:left;
+    position:relative;
+    width:80px;
+    height:80px;
+    background-color:#cccccc;
+    font-size:60px;
+    text-align:center;
+    line-height:80px;
+    cursor:pointer;
+}
+
+.ProjectDetailsCont .ProjectWrapper .Notes {
+
+    margin-top:50px;
+    position:relative;
+    top:0px;
+    left:0px;
+    min-height:100px;
+    width:100%;
+    background-color:#9c9b9b;
+
+}
+
+
+.StaffDetailsCont {
+    z-index:20;
+    position:absolute;
+    right:-51%;
+    width:50%;
+    height:100%;
+    background-color:#ffffff;
+    -webkit-box-shadow: -3px 0px 19px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: -5px 0px 15px rgba(0, 0, 0, 0.79);
+    box-shadow: -2px 0px 15px rgba(0, 0, 0, 0.3);
+    -webkit-transition: right 0.4s ease;
+}
+
+.StaffDetailsCont .StaffWrapper {
+
+    position:absolute;
+    left:90px;
+    top:100px;
+    width:70%;
+    height:100%;
+    color:#000000;
+}
+
+
+.StaffDetailsCont .StaffWrapper .Edit {
+
+    z-index:5;
+    position:absolute;
+    right:30px;
+    border-radius:30px;
+    width:30px;
+    height:30px;
+    border: 2px #ccc solid;
+}
+
+.StaffDetailsCont .StaffWrapper .Edit img {
+
+    position:absolute;
+    left:5px;
+    top:5px;
+}
+
+.StaffDetailsCont .StaffWrapper .LeftWrapper {
+
+    float:left;
+    position:relative;
+    width:170px;
+}
+
+.StaffDetailsCont .StaffWrapper .Image {
+
+
+    position:relative;
+    top:0px;
+    left:0%;
+    width:170px;
+
+}
+
+.StaffDetailsCont .StaffWrapper .Image img {
+
+    width:100%;
+}
+
+.StaffDetailsCont .StaffWrapper .Skills {
+    position:relative;
+    top:0px;
+    left:0%;
+    text-align: right;
+}
+
+.StaffDetailsCont .StaffWrapper .Skills .Skill {
+    float:right;
+    position:relative;
+    margin-right:5px;
+
+}
+
+.StaffDetailsCont .StaffWrapper .RightWrapper {
+    float:left;
+    position:relative;
+    width:350px;
+    left:20px;
+}
+
+.StaffDetailsCont .StaffWrapper .Name {
+    float:left;
+    position:relative;
+    top:0px;
+    left:0%;
+    width:100%;
+    border-bottom: 1px #666 solid;
+    font-size:30px;
+}
+
+
+.StaffDetailsCont .StaffWrapper .TimeCont {
+
+    float:left;
+    position:relative;
+    top:0px;
+    left:0%;
+    width:100%;
+    height:200px;
+
+}
+
+.StaffDetailsCont .StaffWrapper .TimeCont .Projects {
+
+    top:10px;
+    float:left;
+    position:relative;
+    width:50%;
+
+}
+
+.StaffDetailsCont .StaffWrapper .TimeCont .Projects .Project {
+
+    top:10px;
+    position:relative;
+    margin-bottom:10px;
+    color:#6F6F6E;
+}
+
+.StaffDetailsCont .StaffWrapper .TimeCont .Vacations {
+
+    top:10px;
+    float:left;
+    position:relative;
+    width:50%;
+}
+
+.StaffDetailsCont .StaffWrapper .TimeCont .Vacations .Vacation {
+
+    top:10px;
+    position:relative;
+    margin-bottom:10px;
+    color:#6F6F6E;
+}
+
+.StaffDetailsCont .StaffWrapper .TimeCont .PastProjects {
+
+    top:30px;
+    float:left;
+    position:relative;
+    width:50%;
+}
+
+.StaffDetailsCont .StaffWrapper .TimeCont .PastProjects .PastProject {
+
+    top:10px;
+    position:relative;
+    margin-bottom:10px;
+    color:#6F6F6E;
+}
+
+.StaffDetailsCont .StaffWrapper .TimeCont .Projects label, .StaffDetailsCont .StaffWrapper .TimeCont .Vacations label, .StaffDetailsCont .StaffWrapper .TimeCont .PastProjects label {
+
+
+    position:relative;
+    top:0px;
+    left:0px;
+    font-size:20px;
+}
+
+
+/********************************************************** OVERVIEW **********************************************************************/
+
+
+.ProjectsOverview
+{
+
+    position:absolute;
+    left:400px;
+    top:100px;
+    width:600px;
+}
+
+.ProjectsOverview .Project {
+
+    position:relative;
+    margin-bottom:30px;
+    color:#000000;
+    height:20px;
+
+}
+
+.ProjectsOverview .Project .Name {
+
+    position:absolute;
+    top:0px;
+    left:20px;
+}
+
+.ProjectsOverview .Project .Displayer {
+
+    position:absolute;
+    top:0px;
+    left:0px;
+}
+
+.ProjectsOverview .Project .Team {
+
+    display:none;
+    position:relative;
+    top:50px;
+    left:10px;
+    width:90%;
+
+}
+
+.ProjectsOverview .Project .Team .Member {
+
+    float:left;
+    position:relative;
+    width:40px;
+    height:40px;
+    left:0px;
+    top:0px;
+    margin-right:3px;
+}
+
+.ProjectsOverview .Project .Team .Member img {
+
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+}

@@ -1,0 +1,27 @@
+INSERT INTO `Staff` (`ID`, `FirstName`, `LastName`, `URL`, `Research`, `Dev`, `Design`, `UX`) VALUES
+(1, 'Julien', 'Altieri', 'img/team/altieri-julien.png', '0', '0', '1', '1'),
+(2, 'Thomas', 'Arends', 'img/team/arends-thomas.png', '1', '0', '1', '0'),
+(3, 'Sarah', 'Deng', 'img/team/deng-sarah.png', '0', '0', '0', '1'),
+(4, 'Eliad', 'Goldwasser', 'img/team/goldwasser-eliad.png', '0', '1', '0', '1'),
+(5, 'Laura', 'Gomez', 'img/team/gomez-laura.png', '0', '0', '1', '1'),
+(6, 'Jared', 'Hu', 'img/team/hu-jared.png', '0', '0', '1', '1'),
+(7, 'Jeong', 'Jaehun', 'img/team/jeong-jaehun.png', '0', '0', '0', '1'),
+(8, 'Jerry', 'John', 'img/team/john-jerry.png', '1', '1', '0', '1'),
+(9, 'Jonathan', 'Judal', 'img/team/judal-jonathan.png', '1', '1', '1', '0'),
+(10, 'Michael', 'Kahn', 'img/team/kahn-michael.png', '0', '1', '1', '1'),
+(11, 'Sally', 'Kennedy', 'img/team/kennedy-sally.png', '0', '1', '1', '0'),
+(12, 'Janaki', 'Kumar', 'img/team/kumar-janaki.png', '0', '1', '0', '1'),
+(13, 'Hang', 'Le', 'img/team/Le-Hang.png', '1', '0', '1', '0'),
+(14, 'Rouja', 'Pakiman', 'img/team/pakiman-rouja.png', '0', '0', '0', '0'),
+(15, 'Janani', 'Sundar', 'img/team/sundar-janani.png', '1', '0', '1', '1'),
+(16, 'King', 'Suo', 'img/team/suo-jing.png', '0', '0', '1', '1'),
+(17, 'Tim', 'Thiantai', 'img/team/thiantai-tim.png', '0', '1', '0', '0'),
+(18, 'Tina', 'Tuan', 'img/team/tuan-tina.png', '1', '0', '1', '0'),
+(19, 'April', 'Wang', 'img/team/wang-april.png', '0', '0', '1', '1'),
+(20, 'Daniel', 'Wurst', 'img/team/wurst-daniel.png', '1', '0', '0', '0'),
+(21, 'Alex', 'Zhu', 'img/team/zhu-alex.png', '1', '0', '0', '1'),
+(22, 'Zokai', 'Banafsheh', 'img/team/zokai-banafsheh.png', '0', '0', '1', '0');
+
+
+INSERT INTO `Staff` (`ID`, `FirstName`, `LastName`, `URL`, `Research`, `Dev`, `Design`, `UX`) VALUES
+(23, 'DUMMY', 'DUMMY', 'img/team/zokai-banafsheh.png', '0', '0', '1', '0');

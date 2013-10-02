@@ -1,0 +1,42 @@
+{
+    "0": {
+        "id": "01",
+        "firstName": "Daniel",
+        "lastName": "Wurst",
+        "url": "/img/wurst-daniel.jpg",
+        "research": false,
+        "ux": true,
+        "dev": true,
+        "design": true,
+        "projects": {
+            "0": {
+                "id": "1",
+                "name": "Projekt 1",
+                "startDate": "2011-01-06",
+                "endDate": "2011-01-08"
+            },
+            "1": {
+                "id": "02",
+                "name": "Projekt 2",
+                "startDate": "2011-05-06",
+                "endDate": "2011-05-08"
+            },
+            "2": {
+                "id": "Projekt 3",
+                "name": "Shell",
+                "startDate": "2012-01-06",
+                "endDate": "2012-01-08"
+            }
+        },
+        "vacation": {
+            "0": {
+                "id": "01",
+                "name": "Mallorca",
+                "startDate": "2013-09-05",
+                "endDate": "2013-10-05"
+            }
+
+        }
+    }
+
+}

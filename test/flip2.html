@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+    <script src="../jquery-2.0.3.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../Tablet.css">
+
+
+    <script>
+
+
+        $(document).ready(function(){
+
+
+            FlipWidth =  500;
+            FLipHeight = 500;
+            // FLIPPING
+            $('.Available').click(function(e){
+                e.stopPropagation();
+
+                var offset = $(this).offset();
+                console.log(offset);
+                var NextMove = FlipWidth-115;
+                $(this).next().css('left','-='+NextMove+'px');
+                $(this).next().next().css('left','-='+NextMove+'px');
+
+
+                $(this).css('z-index','1');
+                $(this).find('.Front').css('background-Color','#666666');
+                $(this).css('-webkit-transform','rotateY(180deg)');
+                $(this).css('width',FlipWidth+'px');
+                $(this).css('height',FLipHeight+'px');
+                $(this).css('left','-='+FlipWidth*0.3+'px');
+                $(this).css('top', '-='+FLipHeight*0.3+'px');
+
+            });
+
+            $('.Available').find('.Details').click(function(e){
+                e.stopPropagation();
+
+                $(this).parent().parent().find('.Front').css('background-Color','transparent');
+                $(this).parent().parent().css('width','115px');
+                $(this).parent().parent().css('height','115px');
+                $(this).parent().parent().css('left','+='+FlipWidth*0.5+'px');
+                $(this).parent().parent().css('top', '+='+FLipHeight*0.2+'px');
+                $(this).parent().parent().css('-webkit-transform','rotateY(0deg)');
+            })
+
+
+
+
+        })
+
+
+
+    </script>
+
+
+    <style>
+
+
+        .AvailableCont {
+
+            z-index:0;
+
+        }
+
+        .Available {
+
+            top:200px;
+            left:300px;
+            -webkit-transition: -webkit-transform 0.4s ease-out, top 0.4s ease-out, left 0.4s ease-out,width 0.4s ease-out,height 0.4s ease-out
+
+
+        }
+
+        .Back {
+
+
+        }
+
+        .Back .Details {
+
+            position:absolute;
+            top:0px;
+            left:0px;
+            width:100%;
+            height:100%;
+            background-color:green;
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+
+
+
+<div class="AvailableCont">
+
+<div data-type="PAvailable" data-selected="0" data-id="1" class="Available">
+    <div class="Front">
+        <div class="SkillsCont">
+            <div style="display:block" class="Skill"><img src="../img/icons/skills-rs.svg"></div>
+            <div style="display:block" class="Skill"><img src="../img/icons/skills-ixd.svg"></div>
+            <div style="display:block" class="Skill"><img src="../img/icons/skills-dev.svg"></div>
+            <div style="display:block" class="Skill"><img src="../img/icons/skills-vd.svg"></div>
+        </div>
+        <img class="MemberImg" style="opacity:0.5" src="../img/team/wurst-daniel.png">
+        <div class="Name"><div>Hans Wurst</div></div>
+        <img style="display:none" class="DetailsButton" src="../img/icons/Details.svg">
+    </div>
+    <div class="Back">
+        gggg31rpifh3rifrnfrf
+        <div class="Details">bla bla</div>
+    </div>
+</div>
+
+
+    <div data-type="PAvailable" data-selected="0" data-id="1" class="Available">
+        <div class="Front">
+            <div class="SkillsCont">
+                <div style="display:block" class="Skill"><img src="../img/icons/skills-rs.svg"></div>
+                <div style="display:block" class="Skill"><img src="../img/icons/skills-ixd.svg"></div>
+                <div style="display:block" class="Skill"><img src="../img/icons/skills-dev.svg"></div>
+                <div style="display:block" class="Skill"><img src="../img/icons/skills-vd.svg"></div>
+            </div>
+            <img class="MemberImg" style="opacity:0.5" src="../img/team/wurst-daniel.png">
+            <div class="Name"><div>Hans Wurst</div></div>
+            <img style="display:none" class="DetailsButton" src="../img/icons/Details.svg">
+        </div>
+        <div class="Back">
+            gggg31rpifh3rifrnfrf
+            <div class="Details">bla bla</div>
+        </div>
+    </div>
+
+
+
+    <div data-type="PAvailable" data-selected="0" data-id="1" class="Available">
+        <div class="Front">
+            <div class="SkillsCont">
+                <div style="display:block" class="Skill"><img src="../img/icons/skills-rs.svg"></div>
+                <div style="display:block" class="Skill"><img src="../img/icons/skills-ixd.svg"></div>
+                <div style="display:block" class="Skill"><img src="../img/icons/skills-dev.svg"></div>
+                <div style="display:block" class="Skill"><img src="../img/icons/skills-vd.svg"></div>
+            </div>
+            <img class="MemberImg" style="opacity:0.5" src="../img/team/wurst-daniel.png">
+            <div class="Name"><div>Hans Wurst</div></div>
+            <img style="display:none" class="DetailsButton" src="../img/icons/Details.svg">
+        </div>
+        <div class="Back">
+            gggg31rpifh3rifrnfrf
+            <div class="Details">bla bla</div>
+        </div>
+    </div>
+
+
+    <div data-type="PAvailable" data-selected="0" data-id="1" class="Available">
+        <div class="Front">
+            <div class="SkillsCont">
+                <div style="display:block" class="Skill"><img src="../img/icons/skills-rs.svg"></div>
+                <div style="display:block" class="Skill"><img src="../img/icons/skills-ixd.svg"></div>
+                <div style="display:block" class="Skill"><img src="../img/icons/skills-dev.svg"></div>
+                <div style="display:block" class="Skill"><img src="../img/icons/skills-vd.svg"></div>
+            </div>
+            <img class="MemberImg" style="opacity:0.5" src="../img/team/wurst-daniel.png">
+            <div class="Name"><div>Hans Wurst</div></div>
+            <img style="display:none" class="DetailsButton" src="../img/icons/Details.svg">
+        </div>
+        <div class="Back">
+            gggg31rpifh3rifrnfrf
+            <div class="Details">bla bla</div>
+        </div>
+    </div>
+
+
+    <div data-type="PAvailable" data-selected="0" data-id="1" class="Available">
+        <div class="Front">
+            <div class="SkillsCont">
+                <div style="display:block" class="Skill"><img src="../img/icons/skills-rs.svg"></div>
+                <div style="display:block" class="Skill"><img src="../img/icons/skills-ixd.svg"></div>
+                <div style="display:block" class="Skill"><img src="../img/icons/skills-dev.svg"></div>
+                <div style="display:block" class="Skill"><img src="../img/icons/skills-vd.svg"></div>
+            </div>
+            <img class="MemberImg" style="opacity:0.5" src="../img/team/wurst-daniel.png">
+            <div class="Name"><div>Hans Wurst</div></div>
+            <img style="display:none" class="DetailsButton" src="../img/icons/Details.svg">
+        </div>
+        <div class="Back">
+            gggg31rpifh3rifrnfrf
+            <div class="Details">bla bla</div>
+        </div>
+    </div>
+
+
+    <div data-type="PAvailable" data-selected="0" data-id="1" class="Available">
+        <div class="Front">
+            <div class="SkillsCont">
+                <div style="display:block" class="Skill"><img src="../img/icons/skills-rs.svg"></div>
+                <div style="display:block" class="Skill"><img src="../img/icons/skills-ixd.svg"></div>
+                <div style="display:block" class="Skill"><img src="../img/icons/skills-dev.svg"></div>
+                <div style="display:block" class="Skill"><img src="../img/icons/skills-vd.svg"></div>
+            </div>
+            <img class="MemberImg" style="opacity:0.5" src="../img/team/wurst-daniel.png">
+            <div class="Name"><div>Hans Wurst</div></div>
+            <img style="display:none" class="DetailsButton" src="../img/icons/Details.svg">
+        </div>
+        <div class="Back">
+            gggg31rpifh3rifrnfrf
+            <div class="Details">bla bla</div>
+        </div>
+    </div>
+
+
+    <div data-type="PAvailable" data-selected="0" data-id="1" class="Available">
+        <div class="Front">
+            <div class="SkillsCont">
+                <div style="display:block" class="Skill"><img src="../img/icons/skills-rs.svg"></div>
+                <div style="display:block" class="Skill"><img src="../img/icons/skills-ixd.svg"></div>
+                <div style="display:block" class="Skill"><img src="../img/icons/skills-dev.svg"></div>
+                <div style="display:block" class="Skill"><img src="../img/icons/skills-vd.svg"></div>
+            </div>
+            <img class="MemberImg" style="opacity:0.5" src="../img/team/wurst-daniel.png">
+            <div class="Name"><div>Hans Wurst</div></div>
+            <img style="display:none" class="DetailsButton" src="../img/icons/Details.svg">
+        </div>
+        <div class="Back">
+            gggg31rpifh3rifrnfrf
+            <div class="Details">bla bla</div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+</body>
+</html>
