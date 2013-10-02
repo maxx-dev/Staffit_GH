@@ -1,6 +1,6 @@
 
 // REMEMBER TO DIFFERENTIATE BETWEEN CURRENT AND SELECTED VARIABLES;
-
+var lbu;
 var View = 'Months';
 var ProjectType = 'Past';
 
